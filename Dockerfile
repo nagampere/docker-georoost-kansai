@@ -22,4 +22,6 @@ WORKDIR /app
 COPY clone_and_run.sh /app/clone_and_run.sh
 RUN chmod +x /app/clone_and_run.sh
 
+EXPOSE 8501
+
 ENTRYPOINT ["/app/clone_and_run.sh"]
