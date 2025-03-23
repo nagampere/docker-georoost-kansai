@@ -36,7 +36,7 @@ if [ ! -f "$ENV_FILE" ]; then
 
   case "$MODE" in
     "手動入力")
-      ACCESS_KEY=$(zenity --entry --title="AWS ACCESS KEY ID" --text="Enter AWS_ACCESS_KEY_ID")
+      ACCESS_KEY=$(zenity --entry --title="AWS ACCESS KEY ID" --text="Enter AWS_ACCESS_KEY_ID" --hide-text)
       SECRET_KEY=$(zenity --entry --title="AWS SECRET ACCESS KEY" --text="Enter AWS_SECRET_ACCESS_KEY" --hide-text)
       REGION=$(zenity --entry --title="AWS DEFAULT REGION" --text="Enter AWS_DEFAULT_REGION")
 
