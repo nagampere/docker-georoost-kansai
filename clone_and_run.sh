@@ -137,7 +137,7 @@ while true; do
     "Start Streamlit")
       export $(grep -v '^#' "$ENV_FILE" | xargs)
       zenity --info --text="Starting Streamlit..."
-      poetry run streamlit run services/streamlit/app.py --server.address=0.0.0.0 --server.port=8501 --server.headless true
+      poetry run streamlit run services/streamlit/app.py --server.address=0.0.0.0 --server.port=8501 --server.headless true  > /app/streamlit.log 2>&1 &
       zenity --question --text="Streamlit is running. Click OK to stop Streamlit and return to the main menu."
       pkill -f "streamlit run"
       ;;
