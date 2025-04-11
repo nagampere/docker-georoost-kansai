@@ -83,7 +83,6 @@ docker run --name georoost-kansai -p 8501:8501 -e DISPLAY=host.docker.internal:0
 docker run --name georoost-kansai -p 8501:8501 -e DISPLAY=host.docker.internal:0 nagampere0508/docker-georoost-kansai
 ```
 
-### 3.1.2 Windowsの場合
 
 ![Image 2](images/pic_docker_desktop_2.png)
 
