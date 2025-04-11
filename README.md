@@ -68,9 +68,11 @@ docker desktopの下部にある「>_」をクリックしてターミナルを�
 
 ### 3.1.1 Macの場合
 ```bash
-% xhost + 127.0.0.1
+xhost + 127.0.0.1
+```
 
-% docker run --name georoost-kansai -p 8501:8501 -e DISPLAY=host.docker.internal:0 nagampere0508/docker-georoost-kansai
+```bash
+docker run --name georoost-kansai -p 8501:8501 -e DISPLAY=host.docker.internal:0 nagampere0508/docker-georoost-kansai
 ```
 
 ### 3.1.2 Windowsの場合
@@ -78,7 +80,7 @@ docker desktopの下部にある「>_」をクリックしてターミナルを�
 アクセス制御を無効化されているので、「xhost + 127.0.0.1」は不要。
 
 ```bash
-% docker run --name georoost-kansai -p 8501:8501 -e DISPLAY=host.docker.internal:0 nagampere0508/docker-georoost-kansai
+docker run --name georoost-kansai -p 8501:8501 -e DISPLAY=host.docker.internal:0 nagampere0508/docker-georoost-kansai
 ```
 
 ### 3.1.2 Windowsの場合
@@ -122,13 +124,15 @@ dbtの実行完了には3分程度かかり、終了したらGUIが再び開く�
 
 Macの場合
 ```bash
-% xhost + 127.0.0.1
+xhost + 127.0.0.1
+```
 
-% docker start -ai georoost-kansai
+```bash
+docker start -ai georoost-kansai
 ```
 
 Windowsの場合
 ```bash
-% docker start -ai georoost-kansai
+docker start -ai georoost-kansai
 ```
 
